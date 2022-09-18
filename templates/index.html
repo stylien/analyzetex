@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze the text</title>
+</head>
+<body>
+    <h3>this is a form</h3>
+    <form action ='/analyzer' method='post'> {% csrf_token %}
+        
+        <textarea name ='text' style='width: 1094px; height: 117px;'> </textarea><br>
+        <input type="checkbox" name="removepunc" >Remove Punc <br>
+        <input type="checkbox" name="capitalize" >Capitalize <br>
+        <input type="checkbox" name="newlineremove" >New Line Remover <br>
+        <input type="checkbox" name="charactercount" >Character Counter <br>
+        <button type="submit" >Text Analyzer</button>
+      </form>
+</body>
+</html>
